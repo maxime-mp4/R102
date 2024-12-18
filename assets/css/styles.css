@@ -80,3 +80,27 @@ p {
   cursor: pointer;
   font-size: 24px;
 }
+
+.text{
+    font-weight:400;
+    font-size: 16px;
+}
+
+#main-contact{
+    padding-top:15vh;
+}
+
+.section{
+    display:flex;
+    padding-top:5vh;
+    margin-left:5vh;
+    justify-content: space-around;
+}
+
+#nom{
+    width:10vh;
+}
+
+#prenom{
+    width:10vh;
+}

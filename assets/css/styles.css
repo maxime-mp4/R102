@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+  box-sizing: border-box;
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.main-page {
+    background: rgb(42,0,114);
+    background: linear-gradient(90deg, rgba(42,0,114,0.2) 0%, rgba(114,0,97,0.2) 100%);
+}
+
+img {
+    border-radius: 10px;
+}
+
+.main-header {
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #ffffff7f;
+  justify-content: space-between;
+  padding: 0.25em 1.5em 0.25em 1.5em;
+}
+
+.secondary-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.secondary-header * {
+    text-align: center;
+}
+
+.secondary-header h1 {
+    font-size: 24px;
+}
+
+.secondary-header p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.secondary-header i {
+    opacity: 0.5;
+}
+
+p {
+    font-weight:900;
+    font-size: 20px;
+}
+
+#hamburger{
+  visibility: hidden;
+  position: absolute;
+  background-color: #ccc;
+  list-style-type: none;
+  padding: 0;
+  width: 10rem;
+  top: 2rem;
+  right: 0;
+}
+
+#hamburger:target {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.toggleMenu {
+  cursor: pointer;
+  font-size: 24px;
+}

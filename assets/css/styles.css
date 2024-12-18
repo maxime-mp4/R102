@@ -1,22 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-*{
+@import url("/assets/css/variables.css");
+
+* {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "Poppins";
   padding: 0;
   margin: 0;
   text-decoration: none;
+  transition: 150ms all ease-in-out;
+}
+
+:is(h1,h2,h3,h4,h5,h6), .title
+{
+    color: var(--title-color);
 }
 
 .main-page {
-    background: rgb(42,0,114);
-    background: linear-gradient(90deg, rgba(42,0,114,0.2) 0%, rgba(114,0,97,0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 0, 114, 0.3) 0%,
+    rgba(114, 0, 97, 0.3) 100%
+  );
+}
+
+.section-1 {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 15, 101, 0.3),
+    100% rgba(114, 0, 97, 0.3),
+    100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
-    border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
 }
 
 .main-header {
+  backdrop-filter: blur(64px);
   align-items: center;
   display: flex;
   position: fixed;
@@ -28,36 +54,88 @@ img {
 }
 
 .secondary-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+  padding: 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.secondary-header nav img:hover {
+    transform: scale(1.1);
+}
+
+.secondary-header hgroup {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondary-header nav {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .secondary-header * {
-    text-align: center;
+  text-align: center;
 }
 
 .secondary-header h1 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
-.secondary-header p {
-    font-size: 14px;
-    font-weight: 400;
+.secondary-header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.secondary-header li {
+  margin: 0.5em;
+}
+
+p, i {
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .secondary-header i {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-p {
-    font-weight:900;
-    font-size: 20px;
+#infos {
+  height: 100vh;
+  padding: 1.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#hamburger{
+.section-1 i {
+  margin: 0.25em;
+}
+
+.section-separator {
+  width: 100%;
+  text-align: center;
+}
+
+.section-1 footer {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header p {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+#hamburger {
   visibility: hidden;
   position: absolute;
   background-color: #ccc;
@@ -74,12 +152,22 @@ p {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+  }
+
+.hamburger-background {
+    position: fixed;
+    top: 0;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    background-color: red;
 }
 
 .toggleMenu {
   cursor: pointer;
   font-size: 24px;
 }
+<<<<<<< HEAD
 
 .text{
     font-weight:400;
@@ -104,3 +192,5 @@ p {
 #prenom{
     width:10vh;
 }
+=======
+>>>>>>> d9e1be2 (feat: menu)

@@ -1,4 +1,6 @@
 :root {
-    --title-color: #000;
-    --accent-color: rgba(0,0,0, 0.6)
+    --white-title-color: #000;
+    --white-accent-color: rgba(0,0,0, 0.6);
+    --white-bg-semi: rgba(255,255,255,0.25);
+    --default-radius: 10px;
 }

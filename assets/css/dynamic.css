@@ -1,5 +1,14 @@
 @import url("/assets/css/variables.css");
 
+@import url("./pages/dynamic/index.css");
+
+* {
+    scroll-behavior: smooth;
+    transition: 150ms all ease-in-out;
+    font-family: "Poppins";
+}
+
+
 :is(p, i) {
     font-size: 14px;
     font-weight: 400;

@@ -1,6 +1,9 @@
-@import url("/assets/css/variables.css");
-
 @import url("./pages/dynamic/index.css");
+@import url("./pages/dynamic/fastnav.css");
+
+/* COMPONENT IMPORT */
+@import url("./components/dynamic/navbar.css");
+@import url("./components/dynamic/footer.css");
 
 * {
     scroll-behavior: smooth;
@@ -10,7 +13,6 @@
 
 
 :is(p, i) {
-    font-size: 14px;
     font-weight: 400;
     color: var(--white-accent-color);
 }
@@ -20,22 +22,7 @@
     color: var(--white-title-color);
 }
 
-:is(h1) {
-    font-weight: 800;
-    font-size: 22px;
-}
-
-:is(h3) {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-:is(i) {
-    position: relative;
-    z-index: -1;
-  }
-
-  /* BODY STYLING */
+/* BODY STYLING */
 
 .homepage{
     background: linear-gradient(

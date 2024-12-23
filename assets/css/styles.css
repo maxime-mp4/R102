@@ -1,48 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("./variables.css");
+
+/* BASE IMPORT */
+
+@import url("./base/reset.css");
+@import url("./base/global.css");
+@import url("./base/layout.css");
+@import url("./dynamic.css");
 
 /*  AUTOMATIQUEMENT GERÉ AVEC JAVASCRIPT - NE PAS TOUCHER
     @import url("./dynamic.css");
     @import url("monochrome.css");
 */
 
-@import url("./navbar.css");
 
-@import url("./default.css");
-
-
-a:visited {
-  color: inherit
-}
-
-
-
-/* file : fastnav */
-
-.fastnav-header {
-  height: 50vh;
-}
-
-.fastnav-header hgroup {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.per-artist-section ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.per-artist-section li {
-  flex: 0 0 50%;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* PAGES IMPORT */

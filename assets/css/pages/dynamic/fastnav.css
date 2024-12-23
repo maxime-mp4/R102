@@ -1,0 +1,22 @@
+/* file : fastnav */
+
+.fastnav-header {
+  height: 50vh;
+}
+
+.fastnav-header hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

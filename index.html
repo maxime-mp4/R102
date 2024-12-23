@@ -10,10 +10,10 @@
 </head>
 <body class="homepage">
 
-    <!-- BAR DE NAVIGATION -->
+    <!-- BARRE DE NAVIGATION -->
 
     <header class="navbar">
-        <img src="assets/images/favicon.png" alt="Site icon" width="30">
+        <a href="#"><img src="assets/images/favicon.png" alt="Icone du site" width="30"></a>
         <nav>
             <a id="theme-switcher">
                 <i class="title fa-solid fa-sm fa-swatchbook"></i>
@@ -39,20 +39,20 @@
     <!-- CONTENU PRINCIPAL -->
 
     <main>
-        <header class="wrapper greeting-header">
-            <hgroup>
+        <header class="wrapper greeting-wrapper">
+            <hgroup class="wrapper">
                 <h1>Le répertoire musical</h1>
                 <p>
                     Vous pouvez naviguer en cliquant sur une des images, ou en utilisant le menu présent en haut à droite.
                 </p>
             </hgroup>
-            <nav>
+            <nav class="wrapper">
                 <h2>Pages populaire</h2>
-                <ul class="nav-cover-list">
-                    <li><a><img class="stylized-img" alt="Album Cover" width="150" src="./assets/images/tcd.jpg"></a></li>
-                    <li><a><img class="stylized-img" alt="Album Cover" width="150" src="./assets/images/lr.jpg"></a></li>
-                    <li><a><img class="stylized-img" alt="Album Cover" width="150" src="./assets/images/mbdtf.jpg"></a></li>
-                    <li><a><img class="stylized-img" alt="Album Cover" width="150" src="./assets/images/graduation.jpg"></a></li>
+                <ul class="image-wrapper">
+                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/tcd.jpg"></a></li>
+                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/lr.jpg"></a></li>
+                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/mbdtf.jpg"></a></li>
+                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/graduation.jpg"></a></li>
                 </ul>
                 <a href="#about">
                     <p>Defilez pour plus d'informations</p>
@@ -61,9 +61,9 @@
             </nav>
         </header>
 
-        <article id="about">
+        <article class="wrapper" id="about">
             <h2>Il y a tout ce dont vous avez besoin ici.</h2>
-            <section>
+            <section class="wrapper">
                 <h3>Quel est notre but ?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque distinctio aut expedita, placeat facilis, fuga officiis excepturi quaerat harum voluptatum nesciunt exercitationem dolore voluptatem vel aperiam quisquam commodi in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis qui aperiam nisi aspernatur, totam perspiciatis unde eos aliquid temporibus explicabo nesciunt soluta! Consequuntur quia vitae fugiat ut nam nobis aspernatur.</p>
             </section>
@@ -74,7 +74,7 @@
                 <li><i class="fa-solid fa-music"></i></li>
             </ul>
     
-            <section>
+            <section class="wrapper">
                 <h3>Qui sommes-nous ?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque distinctio aut expedita, placeat facilis, fuga officiis excepturi quaerat harum voluptatum nesciunt exercitationem dolore voluptatem vel aperiam quisquam commodi in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis qui aperiam nisi aspernatur, totam perspiciatis unde eos aliquid temporibus explicabo nesciunt soluta! Consequuntur quia vitae fugiat ut nam nobis aspernatur.</p>
             </section>
@@ -84,28 +84,28 @@
     </main>
 
     <!-- PIED DE PAGE -->
-
-    <footer class="footer-white-tint">
-        <hr class="solid">
+    <hr class="solid">
+    <footer class="wrapper footer-tint">
         <section>
-            <h2 class="footer-content">
-                Site web eco-conçu. <a> C'est quoi ? </a>
-            </h2>
-            <h3>
-                Ce site a été réalisé dans le cadre de la ressourse R102
-            </h3>
-            <h4>
-                IUT Aix-en-Provence, département Informatique
-            </h4>
-            <ul>
+            <hgroup>
+                <h2>Pour plus d'informations...</h2>
+                <h3 class="footer-content">
+                    Site web eco-conçu. <a> C'est quoi ? </a>
+                </h3>
+                <h4>
+                    Ce site a été réalisé dans le cadre de la ressourse R102
+                </h4>
+                <p>
+                    IUT Aix-en-Provence, département Informatique
+                </p>
+            </hgroup>
+            <ul class="wrapper">
                 <li><a href="#">Accueil</a></li>
                 <li><a href="navigation-rapide.html">Navigation Rapide</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a class="anchor-top" href="#">
-                <i class="fa-solid fa-chevron-up"></i>
-            </a>
-            <p class="copyright-content">&copy; APPNAME 2025</p>
+            <p>Cliquez sur l'icone du site pour remonter tout en haut.</p>
+            <p class="copyright-content">&copy; THE VAULT 2025</p>
         </section>
     </footer>
 

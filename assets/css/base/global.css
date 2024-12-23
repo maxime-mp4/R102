@@ -2,6 +2,70 @@
     --white-title-color: #000;
     --white-accent-color: rgba(0,0,0, 0.6);
     --white-bg-semi: rgba(255,255,255,0.25);
-    --default-radius: 10px;
     --white-separator-color: rgba(0,0,0,0.25)
+}
+
+* {
+    /* scroll-behavior: smooth; */
+    font-family: "Poppins";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    /* transition: 150ms all ease-in-out; */
+  }
+
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+:is(h1,h2,h3,h4,h5,h6){
+    text-align: center;
+}
+
+:is(p, i) {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+a:active, a:visited {
+    color: inherit;
+}
+
+.formatted-img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00000055;
+}
+
+.formatted-img:active, .formatted-img:hover {
+    transform: scale(1.1);
 }

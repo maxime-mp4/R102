@@ -1,0 +1,43 @@
+footer {
+  background: #ffffffde;
+}
+
+footer section {
+  padding: 0.5em 1em;
+}
+
+footer * {
+  text-align: center;
+}
+
+footer hgroup {
+  margin: 5px 0;
+}
+
+footer hgroup h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+:is(footer hgroup h3, footer hgroup h4) {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+.anchor-top {
+  padding: 4px;
+}
+
+footer ul {
+  margin: 12px 0;
+  justify-content: space-around;
+}
+
+footer ul a {
+  margin: 0 12px;
+}
+
+footer .copyright-content {
+  margin: 6px 0;
+}

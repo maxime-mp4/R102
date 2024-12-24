@@ -1,0 +1,29 @@
+.ye-album {
+    background: rgb(144,147,159);
+    background: linear-gradient(180deg, rgba(144,147,159,1) 0%, rgba(63,95,135,1) 100%); 
+}
+
+
+.main-album-wrapper {
+    height: 100vh;
+}
+
+.about-album-wrapper {
+    background-color: var(--white-bg-semi);
+    padding: 2em 0;
+    border-radius: 15px;
+}
+
+.album-label {
+    padding: 1em 0;
+}
+
+.album-label * {
+    text-align: center;
+}
+
+
+.tracklist-wrapper * {
+    font-size: 14px;
+}
+

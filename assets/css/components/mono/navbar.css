@@ -21,11 +21,10 @@
 
 .nav-element-list {
   position: fixed;
-  bottom: 10%;
+  bottom: 8%;
   background-color: black;
   border: 2px solid white;
   padding: 1em;
-  margin-top: 3em;
   pointer-events: none;
   z-index: 20;
   visibility: hidden;

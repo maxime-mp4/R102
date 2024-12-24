@@ -13,34 +13,35 @@
     <!-- BARRE DE NAVIGATION -->
 
     <header class="navbar">
-        <a href="#"><img src="assets/images/favicon.png" alt="Icone du site" width="30"></a>
+        <a class="wrapper-icon site-logo" href="#"><img src="assets/images/favicon.png" alt="Icone du site" width="30"></a>
         <nav>
             <a id="theme-switcher">
+                <p class="title">[Theme]</p>
                 <i class="title fa-solid fa-sm fa-swatchbook"></i>
             </a>
             <a href="#hamburger">
+                <p class="title">[Menu]</p>
                 <i class="title fa-solid fa-sm fa-bars"></i>
             </a>
             <ul id="hamburger" class="nav-element-list">
                 <li>
-                    <a href="index.html">Accueil</a>
+                    <a class="title" href="#">Accueil</a>
                 </li>
                 <li>
-                    <a href="#">Navigation Rapide</a>
+                    <a class="title"  href="navigation-rapide.html">Navigation Rapide</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a class="title"  href="contact.html">Contact</a>
                 </li>
             </ul>
             <a class="close-menu-background" href="#close"></a>
         </nav>
     </header>
-
     <!-- CONTENU PRINCIPAL -->
 
     <main>
         <header class="wrapper fastnav-header">
-            <hgroup>
+            <hgroup class="wrapper">
                 <h1>Navigation rapide</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam impedit ad tempora! Distinctio, quae officia, eum nisi voluptate placeat repudiandae quos ducimus error voluptas, quidem nulla maiores vitae totam suscipit!
@@ -52,8 +53,8 @@
 
             <h2>Liste des albums disponible, par artiste</h2>
 
-            <section class="wrapper">
-                <h3>Kanye West</h3>
+            <section class="wrapper mono-wrapper mono-wrapper-album">
+                <h3 class="mono-wrapper-title">Kanye West</h3>
                 <ul class="image-wrapper">
                     <li><a href="pages/ye.html"><img class="formatted-img" width="150" src="/assets/images/808s.jpg" alt=""></a></li>
                     <li><a><img class="formatted-img" width="150" src="/assets/images/tcd.jpg" alt=""></a></li>
@@ -66,8 +67,8 @@
                 </ul>
             </section>
 
-            <section class="wrapper">
-                <h3>Kanye West</h3>
+            <section class="wrapper mono-wrapper mono-wrapper-album">
+                <h3 class="mono-wrapper-title">Kanye West</h3>
                 <ul class="image-wrapper">
                     <li><a><img class="formatted-img" width="150" src="/assets/images/808s.jpg" alt=""></a></li>
                     <li><a><img class="formatted-img" width="150" src="/assets/images/tcd.jpg" alt=""></a></li>
@@ -80,8 +81,8 @@
                 </ul>
             </section>
 
-            <section class="wrapper">
-                <h3>Kanye West</h3>
+            <section class="wrapper mono-wrapper mono-wrapper-album">
+                <h3 class="mono-wrapper-title">Kanye West</h3>
                 <ul class="image-wrapper">
                     <li><a><img class="formatted-img" width="150" src="/assets/images/808s.jpg" alt=""></a></li>
                     <li><a><img class="formatted-img" width="150" src="/assets/images/tcd.jpg" alt=""></a></li>
@@ -127,6 +128,7 @@
     </footer>
 
     <!-- ICONES FONT AWESOME -->
+    <script src="./assets/js/index.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/68f6de5607.js" crossorigin="anonymous"></script>
 </body>
 </html>

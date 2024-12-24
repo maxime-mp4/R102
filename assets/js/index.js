@@ -2,6 +2,8 @@ const availableThemes = ["default", "mono"];
 const stylesheet = document.styleSheets[0];
 
 
+console.log(localStorage.getItem("theme"))
+
 if(!availableThemes.includes(localStorage.getItem("theme")))
 {
     localStorage.clear()

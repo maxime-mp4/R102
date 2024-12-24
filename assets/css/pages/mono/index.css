@@ -1,0 +1,32 @@
+.mono-wrapper {
+    background-color: var(--dark-bg-wrapper);
+    border: 2px solid white;
+    padding: 0;
+}
+
+.mono-wrapper-margin {
+    margin: 1em 0;
+}
+
+.mono-wrapper-album {
+    margin: 1em;
+}
+
+.mono-wrapper-title {
+    text-align: start;
+    padding: 0.25em 1em;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+.mono-wrapper ul {
+    padding: 2em 0 0 0;
+}
+
+.mono-wrapper-content {
+    padding: 1em;
+}
+
+.ul-separator {
+    display: none;
+}

@@ -1,5 +1,6 @@
 @import url("./pages/dynamic/index.css");
 @import url("./pages/dynamic/fastnav.css");
+@import url("./pages/dynamic/album.css");
 
 /* COMPONENT IMPORT */
 @import url("./components/dynamic/navbar.css");
@@ -13,7 +14,6 @@
 
 
 :is(p, i) {
-    font-weight: 400;
     color: var(--white-accent-color);
 }
 

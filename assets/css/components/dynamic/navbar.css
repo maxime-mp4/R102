@@ -12,7 +12,6 @@
   justify-content: space-between;
   padding: 0.25em 1.5em 0.25em 1.5em;
 }
-
 .navbar img {
   border-radius: var(--default-radius);
   animation: rotate 3s infinite linear;

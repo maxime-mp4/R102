@@ -3,7 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5em;
+    padding: 2em 1.25em;
+}
+
+.wrapper-start {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2em 1.25em;
 }
 
 .image-wrapper {
@@ -20,3 +27,7 @@
 .margin-half {
     margin: 0.5em;
 }
+
+/* .album-wrapper {
+    margin: 5em 0;
+} */

@@ -1,5 +1,5 @@
 footer {
-  background: #ffffffde;
+  background: var(--white-bg-semi);
 }
 
 footer section {

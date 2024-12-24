@@ -7,12 +7,10 @@
 
 * {
     /* scroll-behavior: smooth; */
-    font-family: "Poppins";
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style-type: none;
     /* transition: 150ms all ease-in-out; */
   }
 
@@ -23,8 +21,8 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 h3 {
@@ -53,7 +51,7 @@ h6 {
 
 :is(p, i) {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
 }
 
@@ -61,11 +59,25 @@ a:active, a:visited {
     color: inherit;
 }
 
-.formatted-img {
+.formatted-img,.formatted-iframe {
     border-radius: 5px;
     box-shadow: 0 0 10px #00000055;
 }
 
 .formatted-img:active, .formatted-img:hover {
     transform: scale(1.1);
+}
+
+
+.tracklist-album-wrapper li {
+    margin: 0.25em 0;
+}
+
+.tracklist-album-wrapper p {
+    font-style: italic;
+}
+
+:is(.tracklist-album-wrapper *, .review-album-wrapper *, .video-album-wrapper *, .more-album-wrapper *) {
+    text-align: justify;
+    font-size: 14px;
 }

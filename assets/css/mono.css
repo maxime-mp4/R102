@@ -1,3 +1,27 @@
+/* COMPONENT IMPORT */
+@import url("./components/mono/navbar.css");
+@import url("./components/mono/footer.css");
+
+* {
+    font-family: "Geist Mono", monospace;
+}
+
+
+
+:is(p, i) {
+    color: var(--dark-accent-color);
+}
+
+:is(h1, h2, h3, h4, h5, h6),
+.title {
+    color: var(--dark-title-color);
+}
+
 body {
     background-color: black;
 }
+
+a:active {
+    text-decoration: underline;
+    color: white;
+  }

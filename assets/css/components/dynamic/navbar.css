@@ -14,7 +14,7 @@
 }
 .navbar img {
   border-radius: var(--default-radius);
-  animation: rotate 3s infinite linear;
+  animation: rotate 5s infinite linear;
 }
 
 .stylized-img {
@@ -25,7 +25,6 @@
 
 .nav-element-list {
   /* transition: 250ms all ease-in-out; */
-  position: relative;
   margin-top: 3em;
   position: absolute;
   pointer-events: none;

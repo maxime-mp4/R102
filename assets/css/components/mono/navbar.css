@@ -21,6 +21,7 @@
 
 .navbar nav > ul:first-of-type {
   display: flex;
+  flex-direction: row-reverse;
   gap: 10px;
 }
 

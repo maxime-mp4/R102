@@ -8,7 +8,6 @@
 
 * {
     scroll-behavior: smooth;
-    transition: 150ms all ease-in-out;
     font-family: "Poppins";
 }
 
@@ -22,9 +21,12 @@
     color: var(--white-title-color);
 }
 
-/* BODY STYLING */
+:is(a) {
+  color: var(--white-accent-color);
+}
 
-.homepage{
+/* BODY STYLING */
+.homepage {
     background: linear-gradient(
       180deg,
       rgba(42, 0, 114, 0.3) 0%,

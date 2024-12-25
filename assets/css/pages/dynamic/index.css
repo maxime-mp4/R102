@@ -16,6 +16,14 @@
   font-style: italic;
 }
 
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1.25em;
+}
+
 
 /* ARTICLE#ABOUT<MAIN> */
 
@@ -32,8 +40,61 @@
   margin: 1em 0;
 }
 
+.pc-only *, .pc-only{
+  display: none;
+}
+
 .ul-separator {
   display: flex;
   justify-content: space-around;
   width: 25%;
+}
+
+@media screen and (min-width: 1024px) {
+
+
+
+  .greeting-wrapper img{
+    width: 200px;
+  }
+
+  .pc-only, .pc-only * {
+    display: inherit;
+  }
+
+  .main-wrapper {
+    margin: 0 25em;
+  }
+
+  #about{
+    height: 100vh;
+    background: none;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0 5em;
+  }
+
+  .about-wrapper h2 {
+    flex: 1 1 100%;
+    height: 10vh;
+  }
+
+  .about-wrapper section {
+    flex: 0 1 40%;
+    margin: 0 5em;
+  }
+
+
+  .ul-separator {
+    display: none;
+  }
+
 }

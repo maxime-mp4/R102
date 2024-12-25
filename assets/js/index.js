@@ -61,13 +61,11 @@ function switchTheme () {
 }
 
 
-window.addEventListener("load", (e) => {
+document.addEventListener("DOMContentLoaded", (e) => {
     loadTheme()
-    console.log("theme")
     checkTheme()
 })
 
 themeSwitcher.addEventListener("click", (e) => {
     switchTheme();
-    location.reload()
 });

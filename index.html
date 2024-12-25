@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preload" href="assets/css/mono.css">
+    <link rel="preload" href="assets/css/dynamic.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <meta name="description" content="Bienvenue sur le répertoire musical. Vous pouvez trouver ici des revues d'albums, d'artistes et même de sons unreleased.">
     <title>MYAPP</title>
@@ -47,7 +49,7 @@
     <!-- CONTENU PRINCIPAL -->
 
     <main>
-        <header class="wrapper greeting-wrapper">
+        <header class="main-wrapper wrapper greeting-wrapper">
             <hgroup class="wrapper">
                 <h1>Le répertoire musical</h1>
                 <p>
@@ -62,6 +64,12 @@
                     <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/mbdtf.jpg"></a></li>
                     <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/graduation.jpg"></a></li>
                 </ul>
+                <ul class="image-wrapper pc-only">
+                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/tcd.jpg"></a></li>
+                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/lr.jpg"></a></li>
+                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/mbdtf.jpg"></a></li>
+                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/graduation.jpg"></a></li>
+                </ul>
                 <a class="wrapper" href="#about">
                     <p>Defilez pour plus d'informations</p>
                     <i class="fa-solid fa-chevron-down"></i>
@@ -69,7 +77,7 @@
             </nav>
         </header>
 
-        <article class="wrapper" id="about">
+        <article class="about-wrapper" id="about">
             <h2>Il y a tout ce dont vous avez besoin ici.</h2>
             <section class="wrapper mono-wrapper mono-wrapper-margin">
                 <h3 class="mono-wrapper-title">Quel est notre but ?</h3>

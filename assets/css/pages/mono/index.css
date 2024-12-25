@@ -1,7 +1,7 @@
 .mono-wrapper {
     background-color: var(--dark-bg-wrapper);
     border: 2px solid white;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .mono-wrapper-margin {
@@ -29,4 +29,18 @@
 
 .ul-separator {
     display: none;
+}
+
+.album-label p {
+    text-align: center;
+}
+
+.album-infos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.album-infos-wrapper img {
+    width: 70px;
 }

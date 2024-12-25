@@ -1,9 +1,5 @@
-footer {
-  background: var(--white-bg-semi);
-}
-
 footer section {
-  padding: 0.5em 1em;
+  padding: 1em 1em 5em 1em;
 }
 
 footer * {
@@ -22,6 +18,11 @@ footer hgroup h2 {
 :is(footer hgroup h3, footer hgroup h4) {
   font-weight: 400;
   font-size: 15px;
+}
+
+footer a {
+  text-decoration: underline;
+  color: var(--dark-accent-color);
 }
 
 

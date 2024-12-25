@@ -4,8 +4,8 @@
 }
 
 
-.main-album-wrapper {
-    height: 100vh;
+.album-infos-wrapper {
+    height: 75vh;
 }
 
 .about-album-wrapper {
@@ -18,8 +18,12 @@
     padding: 1em 0;
 }
 
-.album-label * {
+.album-label p {
     text-align: center;
+}
+
+.about-label {
+    display: none;
 }
 
 

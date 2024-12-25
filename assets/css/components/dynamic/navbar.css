@@ -17,6 +17,23 @@
   animation: rotate 5s infinite linear;
 }
 
+.navbar nav > ul:first-of-type {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-btn {
+  padding: 0.75em;
+}
+
+.navbar p {
+  display: none;
+}
+
+.navbar a {
+  cursor: pointer;
+}
+
 .stylized-img {
   border-radius: var(--default-radius);
   box-shadow: 0px 0px 10px black;

@@ -19,6 +19,11 @@
   width: 100vw;
 }
 
+.navbar nav > ul:first-of-type {
+  display: flex;
+  gap: 10px;
+}
+
 .nav-element-list {
   position: fixed;
   bottom: 8%;

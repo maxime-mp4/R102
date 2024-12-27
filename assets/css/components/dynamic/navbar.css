@@ -1,96 +1,34 @@
-/* HEADER STYLING */
+@import url("../common/navbar.css");
+
 
 .navbar {
-  backdrop-filter: blur(64px);
-  align-items: center;
-  display: flex;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 48px;
-  background-color: var(--white-bg-semi);
-  justify-content: space-between;
-  padding: 0.25em 1.5em 0.25em 1.5em;
-}
-.navbar img {
-  border-radius: var(--default-radius);
-  animation: rotate 5s infinite linear;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
 }
 
-.navbar nav > ul:first-of-type {
-  display: flex;
-  gap: 10px;
+.mobile-navbar-menu {
+  transition: 250ms all ease-in-out;
+  transition-delay: 100ms;
+  align-items: end;
+  top: 100%;
+  right: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  backdrop-filter: blur(8px);
+  transform: translateX(50vw);
 }
 
-.navbar-btn {
-  padding: 0.75em;
+.mobile-navbar-menu:target {
+  transform: translateX(0);
 }
 
-.navbar p {
-  display: none;
-}
-
-.navbar a {
-  cursor: pointer;
-}
-
-.stylized-img {
-  border-radius: var(--default-radius);
-  box-shadow: 0px 0px 10px black;
-}
-
-
-.nav-element-list {
-  /* transition: 250ms all ease-in-out; */
-  margin-top: 3em;
-  position: absolute;
-  pointer-events: none;
-  z-index: 20;
-  top: 0;
-  right: 2%;
-  transform: translateX(100vw);
-}
-
-.nav-element-list:target {
-  pointer-events: all;
-  transform: translateX(0vw);
-
-}
-
-.close-menu-background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  pointer-events: none;
-  cursor: default;
-}
-
-.nav-element-list:target+.close-menu-background {
-  opacity: 1;
-  pointer-events: all;
-  /* background-color: var(--white-bg-semi); */
-}
-
-
-.nav-element-list li {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-element-list a:active {
-  transform: scale(1.025);
-}
-
-.nav-element-list a {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  margin: 0.25em;
-  padding: 1em;
+.mobile-navbar-menu li {
   width: 100%;
-  background-color: var(--white-bg-semi);
-  backdrop-filter: blur(16px);
+  padding: .5em .25em;
+}
+
+.mobile-navbar-menu li:not(:first-child) {
+  border-top: 1px solid black;
 }

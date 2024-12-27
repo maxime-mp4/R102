@@ -2,7 +2,7 @@
 @import url("./components/mono/navbar.css");
 @import url("./components/mono/footer.css");
 
-@import url("./pages/mono/index.css");
+/* @import url("./pages/mono/index.css"); */
 
 
 * {
@@ -10,7 +10,7 @@
 }
 
 
-
+/* 
 :is(p, i) {
     color: var(--dark-accent-color);
 }
@@ -27,4 +27,4 @@ body {
 a:active {
     text-decoration: underline;
     color: white;
-  }
+  } */

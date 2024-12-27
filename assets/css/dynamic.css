@@ -27,11 +27,7 @@
 
 /* BODY STYLING */
 .homepage {
-    background: linear-gradient(
-      180deg,
-      rgba(42, 0, 114, 0.3) 0%,
-      rgba(114, 0, 97, 0.3) 100%
-    );
+  animation: couleur-changeante 60s infinite;
   }
 
 .fastnav {

@@ -1,73 +1,39 @@
-.navbar  {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  background-color: black;
-  position: fixed;
+@import url("../common/navbar.css");
+
+
+.navbar a {
+  color: white;
+}
+
+.navbar {
   bottom: 0;
-  width: 100vw;
-  border-top: 2px solid white;
-}
-
-.navbar nav {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 15px;
-  margin: 0 1.25em;
-  justify-content: start;
-  align-items: center;
-  width: 100vw;
-}
-
-.navbar nav > ul:first-of-type {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 10px;
-}
-
-.nav-element-list {
-  position: fixed;
-  bottom: 8%;
   background-color: black;
-  border: 2px solid white;
-  padding: 1em;
-  pointer-events: none;
-  z-index: 20;
+  flex-direction: row-reverse;
+}
+
+.navbar-main-menu {
+  flex-direction: row-reverse;
+}
+
+.navbar-display-label::before{
+  content: "["
+}
+
+.navbar-display-label::after{
+  content: "]"
+}
+
+.mobile-navbar-menu {
   visibility: hidden;
-}
-
-.close-menu-background {
-  position: fixed;
+  gap: 2px;
+  background-color: black;
+  border: 1px solid white;
+  align-items: start;
+  padding: 0.5em;
+  bottom: 6%;
   left: 0;
-  top: 0;
-  z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  pointer-events: none;
-  cursor: default;
 }
 
-.nav-element-list:target+.close-menu-background {
-  opacity: 1;
-  pointer-events: all;
-  /* background-color: var(--white-bg-semi); */
-}
-
-.nav-element-list:target {
-  pointer-events: all;
+.mobile-navbar-menu:target {
   visibility: visible;
 }
-
-.navbar i {
-  display: none;
-}
-
-.site-logo {
-  padding: 1em;
-}
-
-.site-logo img {
-  animation: rotate 5s infinite linear;
-}
-

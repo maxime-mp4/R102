@@ -3,88 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="preload" href="assets/css/mono.css">
-    <link rel="preload" href="assets/css/dynamic.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <meta name="description" content="Bienvenue sur le répertoire musical. Vous pouvez trouver ici des revues d'albums, d'artistes et même de sons unreleased.">
     <title>MYAPP</title>
 </head>
+
 <body class="homepage">
 
     <!-- BARRE DE NAVIGATION -->
 
     <header class="navbar">
-        <a class="wrapper-icon site-logo" href="#"><img src="../assets/images/favicon.png" alt="Icone du site" width="30"></a>
+
+        <a class="navbar-icon" href="#">
+            <img src="../assets/images/favicon.png" alt="Icone du site">
+        </a>
+
         <nav>
-            <ul>
-                <li>
-                    <a class="navbar-btn" id="theme-switcher">
-                        <p class="title">[Theme]</p>
-                        <i class="title fa-solid fa-sm fa-swatchbook"></i>
+
+            <ul class="navbar-main-menu">
+
+                <li class="pc-only">
+                    <a>
+                        <p class="navbar-display-label">Accueil</p>
+                    </a>
+                </li>
+
+                <li class="pc-only">
+                    <a>
+                        <p class="navbar-display-label">Navigation Rapide</p>
+                    </a>
+                </li>
+
+                <li class="pc-only">
+                    <a>
+                        <p class="navbar-display-label">Contact</p>
                     </a>
                 </li>
                 <li>
-                    <a class="navbar-btn" href="#hamburger">
-                        <p class="title">[Menu]</p>
-                        <i class="title fa-solid fa-sm fa-bars"></i>
+                    <a>
+                        <p class="navbar-display-label">Thème</p>
+                    </a>
+                </li>
+
+                <li class="mobile-only">
+                    <a href="#menu">
+                        <p class="navbar-display-label">Menu</p>
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul id="menu" class="mobile-navbar-menu">
+                <li>
+                    <a href="../index.html">
+                        <p class="navbar-display-label">Accueil</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../navigation-rapide.html">
+                        <p class="navbar-display-label">Navigation Rapide</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../contact.html">
+                        <p class="navbar-display-label">Contact</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#close">
+                        <p class="navbar-display-label">Fermer</p>
                     </a>
                 </li>
             </ul>
-            <ul id="hamburger" class="nav-element-list">
-                <li>
-                    <a class="title" href="../index.html">Accueil</a>
-                </li>
-                <li>
-                    <a class="title"  href="../navigation-rapide.html">Navigation Rapide</a>
-                </li>
-                <li>
-                    <a class="title"  href="../contact.html">Contact</a>
-                </li>
-            </ul>
-            <a class="close-menu-background" href="#close"></a>
+            
+            <a class="mobile-navbar-menu-background" href="#close"></a>
+
         </nav>
+
+
     </header>
 
     <!-- CONTENU PRINCIPAL -->
 
     <main>
-        <header class="main-wrapper wrapper greeting-wrapper">
-            <hgroup class="wrapper">
+
+        <header class="homepage-header">
+
+            <hgroup>
                 <h1>Le répertoire musical</h1>
                 <p>
                     Vous pouvez naviguer en cliquant sur une des images, ou en utilisant le menu présent en haut à droite.
                 </p>
             </hgroup>
-            <nav class="mono-wrapper mono-wrapper-margin">
-                <h2 class="mono-wrapper-title">Pages populaire</h2>
-                <ul class="image-wrapper">
-                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/tcd.jpg"></a></li>
-                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/lr.jpg"></a></li>
-                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/mbdtf.jpg"></a></li>
-                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/graduation.jpg"></a></li>
+
+
+            <nav>
+                <h2>Pages populaire</h2>
+                <ul>
+                    <li><a><img alt="Album Cover" src="./assets/images/tcd.jpg"></a></li>
+                    <li><a><img alt="Album Cover" src="./assets/images/lr.jpg"></a></li>
+                    <li><a><img alt="Album Cover" src="./assets/images/mbdtf.jpg"></a></li>
+                    <li><a><img alt="Album Cover" src="./assets/images/graduation.jpg"></a></li>
+                    <li class="pc-only"><a><img alt="Album Cover" src="./assets/images/tlop.jpg"></a></li>
+                    <li class="pc-only"><a><img alt="Album Cover" src="./assets/images/tcd.jpg"></a></li>
+                    <li class="pc-only"><a><img alt="Album Cover" src="./assets/images/yandhi.jpg"></a></li>
+                    <li class="pc-only"><a><img alt="Album Cover" src="./assets/images/bully.jpeg"></a></li>
                 </ul>
-                <ul class="image-wrapper pc-only">
-                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/tcd.jpg"></a></li>
-                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/lr.jpg"></a></li>
-                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/mbdtf.jpg"></a></li>
-                    <li><a><img class="formatted-img" alt="Album Cover" width="150" src="./assets/images/graduation.jpg"></a></li>
-                </ul>
-                <a class="wrapper" href="#about">
-                    <p>Defilez pour plus d'informations</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
             </nav>
+
+            <a href="#about">
+                <p>Defilez pour plus d'informations</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+
         </header>
 
-        <article class="about-wrapper" id="about">
+        <article class="homepage-article" id="about">
+
             <h2>Il y a tout ce dont vous avez besoin ici.</h2>
             <section class="wrapper mono-wrapper mono-wrapper-margin">
                 <h3 class="mono-wrapper-title">Quel est notre but ?</h3>
                 <p class="mono-wrapper-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque distinctio aut expedita, placeat facilis, fuga officiis excepturi quaerat harum voluptatum nesciunt exercitationem dolore voluptatem vel aperiam quisquam commodi in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis qui aperiam nisi aspernatur, totam perspiciatis unde eos aliquid temporibus explicabo nesciunt soluta! Consequuntur quia vitae fugiat ut nam nobis aspernatur.</p>
             </section>
 
-            <ul class="ul-separator">
+            <ul class="mobile-only">
                 <li><i class="fa-solid fa-record-vinyl"></i></li>
                 <li><i class="fa-solid fa-headphones-simple"></i></li>
                 <li><i class="fa-solid fa-music"></i></li>
@@ -100,12 +144,13 @@
     </main>
 
     <!-- PIED DE PAGE -->
-    <hr class="solid">
-    <footer class="wrapper footer-tint">
+
+    <!-- <footer class="footer">
+
         <section>
             <hgroup>
                 <h2>Pour plus d'informations...</h2>
-                <p class="footer-content">
+                <p>
                     Site web eco-conçu. <a> C'est quoi ? </a>
                 </p>
                 <p>
@@ -115,19 +160,23 @@
                     IUT Aix-en-Provence, département Informatique
                 </p>
             </hgroup>
-            <ul class="wrapper">
+
+            <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="navigation-rapide.html">Navigation Rapide</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+
             <p>Cliquez sur l'icone du site pour remonter tout en haut.</p>
-            <p class="copyright-content">&copy; THE VAULT 2025</p>
+            <p>&copy; THE VAULT 2025</p>
+
         </section>
-    </footer>
+
+    </footer> -->
 
     <!-- ICONES FONT AWESOME -->
     <script src="https://kit.fontawesome.com/68f6de5607.js" crossorigin="anonymous"></script>
 
-    <script src="./assets/js/index.js" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/js/index.js" crossorigin="anonymous"></script> -->
 </body>
 </html>

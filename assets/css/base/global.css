@@ -83,24 +83,24 @@ h6 {
     font-size: 14px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     h1 {
         font-size: 36px;
         font-weight: 900;
     }
     
     h2 {
-        font-size: 32px;
+        font-size: 33px;
         font-weight: 700;
     }
     
     h3 {
-        font-size: 30px;
+        font-size: 29px;
         font-weight: 700;
     }
     
     h4 {
-        font-size: 28px;
+        font-size: 27px;
         font-weight: 600;
     }
     
@@ -110,7 +110,72 @@ h6 {
     }
     
     h6 {
-        font-size: 22px;
+        font-size: 21px;
+        font-weight: 500;
+    }
+    
+    :is(h1,h2,h3,h4,h5,h6){
+        text-align: center;
+    }
+    
+    :is(p, i) {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    
+    .formatted-img,.formatted-iframe {
+        border-radius: 5px;
+        box-shadow: 0 0 10px #00000055;
+    }
+    
+    .formatted-img:active, .formatted-img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .tracklist-album-wrapper li {
+        margin: 0.25em 0;
+    }
+    
+    .tracklist-album-wrapper p {
+        font-style: italic;
+    }
+    
+    :is(.tracklist-album-wrapper *, .review-album-wrapper *, .video-album-wrapper *, .more-album-wrapper *) {
+        text-align: justify;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 46px;
+        font-weight: 900;
+    }
+    
+    h2 {
+        font-size: 38px;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 34px;
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    h5 {
+        font-size: 27px;
+        font-weight: 500;
+    }
+    
+    h6 {
+        font-size: 24px;
         font-weight: 500;
     }
     

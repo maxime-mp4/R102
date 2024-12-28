@@ -1,6 +1,5 @@
 @import url("../common/navbar.css");
 
-
 .navbar {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background-color: rgba(255, 255, 255, 0.5);
@@ -8,9 +7,8 @@
 }
 
 .mobile-navbar-menu {
-  transition: 250ms all ease-in-out;
+  transition: 150ms all ease-in-out;
   transition-delay: 100ms;
-  align-items: end;
   top: 100%;
   right: 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -26,7 +24,7 @@
 
 .mobile-navbar-menu li {
   width: 100%;
-  padding: .5em .25em;
+  padding: .75em .25em;
 }
 
 .mobile-navbar-menu li:not(:first-child) {

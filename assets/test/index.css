@@ -1,4 +1,4 @@
-@import url("../css/components/dynamic/navbar.css");
+@import url("../css/components/mono/navbar.css");
 
 * {
     box-sizing: border-box;
@@ -6,6 +6,11 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
 }
 
 .homepage-header {
@@ -17,13 +22,21 @@
     justify-content: space-evenly;
 }
 
-:is(.homepage-header hgroup, .homepage-header h2) {
+:is(.homepage-header hgroup *, .homepage-header h2) {
     text-align: center;
 }
 
 .homepage-header nav {
+    border: 2px solid white;
     display: flex;
     flex-direction: column;
+    background-color: #171717;
+}
+
+.homepage-header nav h2 {
+    text-align: start;
+    width: 100%;
+    padding: .5em;
 }
 
 .homepage-header a {
@@ -33,17 +46,22 @@
 }
 
 .homepage-header ul {
-    margin: 1em 0;
+    padding: 1em 0;
+    border-top: 2px solid white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .homepage-header img {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin: .25em;
-    border-radius: 10px;
-    width: 150px;
+    width: 125px;
+    position: relative;
+    z-index: 10;
+}
+
+.homepage-header img:active,.homepage-header img:hover {
+    border: 2px solid white
 }
 
 .pc-only {
@@ -51,39 +69,59 @@
 }
 
 
-
-
-
 .homepage-article {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     padding: 0 2em;
+}
+
+.homepage-article section {
+    border: 2px solid white;
+    background-color: #171717;
+}
+
+.homepage-article section h3 {
+    padding: .5em;
+}
+
+.homepage-article section p {
+    padding: 1em;
+    border-top: 2px solid white;
+}
+
+.homepage-article ul {
+    display: none;
 }
 
 .homepage-article p {
     text-align: justify;
 }
 
-.homepage-article ul {
+.homepage-header hgroup {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
-
-
-
 @media (min-width: 768px) {
+
+
+    .pc-only {
+        display: none;
+    }
 
     .homepage-article {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
+        height: 100vh;
     }
 
     .homepage-article h2 {
@@ -93,19 +131,24 @@
 
     .homepage-article section {
         margin: 5em 0;
-        flex: 0 0 40%
+        flex: 0 0 45%;
+        height: 40%;
     }
 
     .homepage-article .mobile-only {
         display: none;
     }
 
-    .pc-only {
-        display: unset;
+    .homepage-header li {
+      flex-basis: 50%;
     }
 
-    .homepage-header li {
-        flex-basis: 21%;
+    .homepage-header nav {
+        width: 55%;
+    }
+
+    .homepage-header ul {
+      width: 100%;
     }
 
     .homepage-header img {
@@ -113,13 +156,50 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1081px) and (orientation: landscape) {
+    .homepage-header nav {
+        width: 80%
+    }
+    .homepage-header ul {
+        width: 100%;
+      } 
+
+
+}
+
+
 @media (min-width: 1200px) {
+
+    .homepage-header hgroup {
+        height: 15vh;
+    }
 
     .homepage-article .mobile-only {
         display: none;
     }
 
+    .homepage-header ul {
+      padding: 2em 0;
+    }
+
     .homepage-header img {
         width: 220px;
+    }
+
+    .homepage-article section {
+        margin: 10em 0;
+        flex: 0 0 40%
+    }
+
+    .homepage-header nav {
+        width: 45%
+    }
+
+    .homepage-header li {
+        flex-basis: 21%;
+      }
+
+    .pc-only {
+        display: unset;
     }
 }

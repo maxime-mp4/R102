@@ -2,7 +2,7 @@
 @import url("./components/mono/navbar.css");
 @import url("./components/mono/footer.css");
 
-/* @import url("./pages/mono/index.css"); */
+@import url("./pages/mono/index.css");
 
 
 * {

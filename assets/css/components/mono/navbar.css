@@ -6,6 +6,8 @@
 }
 
 .navbar {
+  box-shadow: 0 0 10px black;
+  border-top: 1px solid white;
   bottom: 0;
   background-color: black;
   flex-direction: row-reverse;
@@ -36,4 +38,10 @@
 
 .mobile-navbar-menu:target {
   visibility: visible;
+}
+
+@media (min-width: 768px){
+  .navbar-main-menu {
+    flex-direction: row;
+  }
 }

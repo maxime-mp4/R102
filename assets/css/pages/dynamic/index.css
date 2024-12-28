@@ -105,7 +105,11 @@
     }
 
     .homepage-header li {
-        flex-basis: 21%;
+      flex-basis: 21%;
+    }
+
+    .homepage-header ul {
+      width: 100vw;
     }
 
     .homepage-header img {
@@ -117,6 +121,10 @@
 
     .homepage-article .mobile-only {
         display: none;
+    }
+
+    .homepage-header ul {
+      width: 65%;
     }
 
     .homepage-header img {

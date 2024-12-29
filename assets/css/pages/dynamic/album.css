@@ -1,33 +1,127 @@
-.ye-album {
-    background: rgb(144,147,159);
-    background: linear-gradient(180deg, rgba(144,147,159,1) 0%, rgba(63,95,135,1) 100%); 
+.albumname-ye {
+  background-color: #7e8daa;
 }
 
+.album-main-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
 
-.album-infos-wrapper {
-    height: 75vh;
-}
-
-.about-album-wrapper {
-    background-color: var(--white-bg-semi);
-    padding: 2em 0;
-    border-radius: 15px;
-}
-
-.album-label {
-    padding: 1em 0;
-}
-
-.album-label p {
-    text-align: center;
-}
-
-.about-label {
+  .albumpage .pconly {
     display: none;
-}
+  }
+  
+  .album-main-infos hgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .album-main-infos img {
+    border-radius: 10px;
+  }
+  
+  .album-main-infos section {
+    padding: 0 2em;
+  }
+  
+  .album-review {
+    padding: 0 2em;
+  }
+  
+  .album-review section {
+    margin: 2em 0;
+  }
 
-.tracklist-wrapper * {
-    font-size: 14px;
-}
+  .album-review h4, .album-review h5 {
+    text-align: start;
+    font-size: 15px;
+  }
 
+  .album-review iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  @media (min-width: 768px) {
+    .album-review h4, .album-review h5 {
+        font-size: 17px;
+      }
+      .album-review iframe {
+        width: 100%;
+        height: 500px;
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 1081px) and (orientation: landscape) {
+    .album-main-infos {
+        padding: 3em 0;
+    }
+
+    .album-review h4, .album-review h5 {
+        font-size: 21px;
+      }
+
+    .albumpage main {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    .album-review iframe {
+        width: 100%;
+        height: 500px;
+      }
+
+  }
+
+  @media (min-width: 1200px) {
+    .album-review h4, .album-review h5 {
+        font-size: 21px;
+      }
+
+      .albumpage .pconly {
+        display: unset
+      }
+
+      .image-background {
+        position: fixed;
+        z-index: -1;
+        height: 100vh;
+        width: 100vh;
+        opacity: 0.25;
+        filter: blur(32px);
+      }
+
+      .foreground-image {
+        border-radius: 15px;
+        position: fixed;
+        top: 50%;
+        left: -5%;
+        width: 40vw;
+        height: 40vw;
+        transform: translateY(-47%);
+        transition: all 550ms ease-in-out;
+        transition-delay: 250ms;
+      }
+
+      .foreground-image:hover {
+        transform: translateX(10em) translateY(-47%)
+      }
+
+      .album-main-infos {
+        justify-content: space-evenly;
+      }
+
+      .album-main-infos img {
+        display: none;
+      }
+
+      :is(.album-main-infos, .album-review) {
+        width: 50vw;
+        margin-right: 2em;
+        margin-left: auto;
+      }
+  }

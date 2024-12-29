@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 const availableThemes = ["default", "mono"];
 const stylesheet = document.styleSheets[0];
 

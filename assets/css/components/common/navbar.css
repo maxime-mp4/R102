@@ -59,6 +59,10 @@
 
   @media (min-width: 768px) {
 
+    .mobile-navbar-menu {
+      display: none;
+    }
+
 
     .navbar-icon img {
       width: 45px;

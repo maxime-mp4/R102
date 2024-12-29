@@ -4,12 +4,13 @@
 
 @import url("./pages/mono/index.css");
 @import url("./pages/mono/contact.css");
+@import url("./pages/mono/navigation.css");
+@import url("./pages/mono/album.css");
 
 
 * {
     font-family: "Azeret Mono";
 }
-
 
 
 :is(p, i) {

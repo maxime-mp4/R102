@@ -8,140 +8,192 @@
     <title>Document</title>
 </head>
 
-<body class="ye-album">
+<body class="albumpage albumname-ye">
 
     <header class="navbar">
-        <a class="wrapper-icon site-logo" href="#"><img src="../assets/images/favicon.png" alt="Icone du site" width="30"></a>
+
+        <a class="navbar-icon" href="#">
+            <img src="../assets/images/favicon.png" alt="Icone du site">
+        </a>
+
         <nav>
-            <ul>
-                <li>
-                    <a class="navbar-btn" id="theme-switcher">
-                        <p class="title">[Theme]</p>
-                        <i class="title fa-solid fa-sm fa-swatchbook"></i>
+
+            <ul class="navbar-main-menu">
+
+                <li class="pc-only">
+                    <a href="#">
+                        <p class="navbar-display-label">Accueil</p>
+                    </a>
+                </li>
+
+                <li class="pc-only">
+                    <a href="navigation-rapide.html">
+                        <p class="navbar-display-label">Navigation Rapide</p>
+                    </a>
+                </li>
+
+                <li class="pc-only">
+                    <a href="contact.html">
+                        <p class="navbar-display-label">Contact</p>
                     </a>
                 </li>
                 <li>
-                    <a class="navbar-btn" href="#hamburger">
-                        <p class="title">[Menu]</p>
-                        <i class="title fa-solid fa-sm fa-bars"></i>
+                    <a id="theme-switcher">
+                        <p class="navbar-display-label">Thème</p>
+                    </a>
+                </li>
+
+                <li class="mobile-only">
+                    <a href="#menu">
+                        <p class="navbar-display-label">Menu</p>
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul id="menu" class="mobile-navbar-menu">
+                <li>
+                    <a href="../index.html">
+                        <p class="navbar-display-label">Accueil</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../navigation-rapide.html">
+                        <p class="navbar-display-label">Navigation Rapide</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../contact.html">
+                        <p class="navbar-display-label">Contact</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#close">
+                        <p class="navbar-display-label">Fermer</p>
                     </a>
                 </li>
             </ul>
-            <ul id="hamburger" class="nav-element-list">
-                <li>
-                    <a class="title" href="../index.html">Accueil</a>
-                </li>
-                <li>
-                    <a class="title"  href="../navigation-rapide.html">Navigation Rapide</a>
-                </li>
-                <li>
-                    <a class="title"  href="../contact.html">Contact</a>
-                </li>
-            </ul>
-            <a class="close-menu-background" href="#close"></a>
+            
+            <a class="mobile-navbar-menu-background" href="#close"></a>
+
         </nav>
+
+
     </header>
 
+    <main>
 
-    <main class="album-wrapper wrapper">
-        <section class="album-infos-wrapper">
-                <header class="wrapper album-cover-wrapper">
-                    <img class="formatted-img" width="300" src="../assets/images/ye.jpg" alt="">
-                </header>
-    
-                <hgroup class="album-label">
-                    <h1>Ye</h1>
-                    <p>Album studio de Kanye West</p>
-                </hgroup>
+        <img class="pconly image-background" width="300" src="../assets/images/ye.jpg" alt="">
+        <img class="pconly foreground-image" width="300" src="../assets/images/ye.jpg" alt="">
 
-            <section class="mono-wrapper mono-wrapper-margin">
-                <h2 class="mono-wrapper-title">Synopsis</h2>
-                <p class="album-description mono-wrapper-content">
-                    Ye est le huitième album studio de l'artiste Kanye West. Il est sorti le 1er juin 2018, 2 ans après son
+
+        <header class="album-main-infos">
+
+            <img width="300" src="../assets/images/ye.jpg" alt="">
+            <hgroup>
+                <h1>Ye</h1>
+                <p>Album studio de Kanye West</p>
+            </hgroup>
+
+            <section>
+                <h2>Synopsis</h2>
+                <p>
+                    Ye est le huitième album studio de l'artiste Kanye West. Il est sorti le 1er juin 2018, 2 ans après
+                    son
                     album précédent, The Life Of Pablo. Cet album a été controversé du à certains choix commis par
                     l'artiste.
                 </p>
             </section>
-        </section>
 
-        <article class="about-album-wrapper">
-            <h2 class="about-label">En savoir plus</h2>
-            <section class="mono-wrapper mono-wrapper-margin">
-                <h2 class="mono-wrapper-title">Tracklist</h2>
-                <section class="wrapper-start">
-                    <ol class="tracklist-album-wrapper">
+        </header>
+
+        <article class="album-review">
+            <h2>En savoir plus</h2>
+
+            <section class="tracklist-section">
+                <h3>Tracklist</h3>
+                    <ol>
                         <li>
-                            <h3>I Thought About Killing You</h3>
+                            <h4>I Thought About Killing You</h4>
                             <p>Ecriture : Kanye West, Mike Dean, Francis Starlite, Benny Bianco</p>
                             <p>Production: Kanye West, Mike Dean</p>
                         </li>
                         <li>
-                            <h3>Yikes</h3>
+                            <h4>Yikes</h4>
                             <p>Ecriture : Kanye West, Mike Dean, James Mbarack Achieng, Ayub Ogada</p>
                             <p>Production: Kanye West, Mike Dean</p>
                         </li>
                         <li>
-                            <h3>All Mine</h3>
+                            <h4>All Mine</h4>
                             <p>Ecriture : Kanye West, Mike Dean, Francis Starlite</p>
                             <p>Production: Kanye West, Francis and the Lights, Mike Dean</p>
                         </li>
                         <li>
-                            <h3>Wouldn't Leave (feat. PARTYNEXTDOOR)</h3>
+                            <h4>Wouldn't Leave</h4>
+                            <h5>(feat. PARTYNEXTDOOR)</h5>
                             <p>Ecriture : Kanye West, Mike Dean, Reverend W.A Donaldson</p>
                             <p>Production: Kanye West, Mike Dean</p>
                         </li>
                         <li>
-                            <h3>No Mistakes</h3>
+                            <h4>No Mistakes</h4>
                             <p>Ecriture : Kanye West, Che Pope, Mike Dean, Ewdin Hawkins, Ricky Walters</p>
                             <p>Production: Kanye West, Mike Dean, Che Pope</p>
                         </li>
                         <li>
-                            <h3>Ghost Town (feat. PARTYNEXTDOOR)</h3>
+                            <h4>Ghost Town</h4>
+                            <h5>(feat. PARTYNEXTDOOR)</h5>
                             <p>Ecriture : Kanye West, Mike Dean, Trade Martin</p>
                             <p>Production: Kanye West, Francis and the Lights, Mike Dean</p>
                         </li>
                         <li>
-                            <h3>Violent Crimes</h3>
+                            <h4>Violent Crimes</h4>
                             <p>Ecriture : Kanye West</p>
                             <p>Production: Kanye West</p>
                         </li>
                     </ol>
+            </section>
+
+            <section class="review-section">
+                <h3>Notre critique</h3>
+                <section>
+                    <h4>Ce qu'on a aimé :</h4>
+                    <p>
+                        Dans l'ensemble, l'album est excellent. C'est le meilleur projet introspectif de son année, et
+                        le meilleur dans le thème de la santé mentale fait par Kanye West, notamment en lien avec tous
+                        les soucis de santé que celui-ci a. Malgré sa durée d'une demi-heure, l'album reste agréable à
+                        écouter du début à la fin et cet album est indéniablement un no skip.
+                    </p>
+
+                    <h4>Ce qu'on a moins aimé :</h4>
+                    <p>Le soucis de cet album, c'est la durée. Comme dit avant, il fait même pas une heure ! Le son "All
+                        Mine" est peut-être le son le moins bien de l'album. Bien qu'écoutable, celui-ci ne rivalise
+                        avec aucun autre son de l'album.
+                    </p>
                 </section>
             </section>
 
-            <section class="mono-wrapper mono-wrapper-margin">
-                <h2 class="mono-wrapper-title">Notre critique</h2>
-                <section class="wrapper-start review-album-wrapper">
-                    <h3>Ce qu'on a aimé :</h3>
-                    <p>
-                        Dans l'ensemble, l'album est excellent. C'est le meilleur projet introspectif de son année, et le meilleur dans le thème de la santé mentale fait par Kanye West, notamment en lien avec tous les soucis de santé que celui-ci a. Malgré sa durée d'une demi-heure, l'album reste agréable à écouter du début à la fin et cet album est indéniablement un no skip.
-                    </p>
-                    <h3>Ce qu'on a moins aimé :</h3>
-                    <p>Le soucis de cet album, c'est la durée. Comme dit avant, il fait même pas une heure ! Le son "All Mine" est peut-être le son le moins bien de l'album. Bien qu'écoutable, celui-ci ne rivalise avec aucun autre son de l'album.
-                    </p>
-                </section>
-            </section>
-            <section class="mono-wrapper mono-wrapper-margin">
-                <h2 class="mono-wrapper-title">Vidéo</h2>
-                <section class="wrapper-start video-album-wrapper">
-                    <h3>Disponible sur YouTube</h3>
-                    <iframe class="formatted-iframe" width="300" height="300"
-                        src="https://www.youtube.com/embed/DSY7u8Jg9c0" title="Kanye West - Violent Crimes (Lyric Video)"
+            <section class="video-section">
+                <h3>Vidéo</h3>
+                <section>
+                    <h4>Disponible sur YouTube</h4>
+                    <iframe src="https://www.youtube.com/embed/DSY7u8Jg9c0"
+                        title="Kanye West - Violent Crimes (Lyric Video)"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </section>
             </section>
 
-            <section class="mono-wrapper mono-wrapper-margin">
-
-            <h2 class="mono-wrapper-title">Q&A</h2>
-                <section class="wrapper-start more-album-wrapper">
-                    <h3>Où écouter ?</h3>
+            <section class="qa-section">
+                <h3>Q&A</h3>
+                <section>
+                    <h4>Où écouter ?</h4>
                     <p>L'album est disponible sur toutes les plateformes de streaming.</p>
-                    <h3>Quelles sont vos sources ?</h3>
+                    <h4>Quelles sont vos sources ?</h4>
                     <p>
-                    La plupart de nos recherches sont effectuées sur
-                    <a href="https://fr.wikipedia.org/wiki/Ye_(album)" target="_blank">Wikipedia</a>. Nous récuperons ensuite les informations essentielles (tracklist, production) et nous rédigons notre avis sur l'album choisi.
+                        La plupart de nos recherches sont effectuées sur
+                        <a href="https://fr.wikipedia.org/wiki/Ye_(album)" target="_blank">Wikipedia</a>. Nous
+                        récuperons ensuite les informations essentielles (tracklist, production) et nous rédigons notre
+                        avis sur l'album choisi.
                     </p>
                 </section>
             </section>
@@ -149,32 +201,8 @@
 
     </main>
 
-    <footer class="wrapper footer-tint">
-        <section>
-            <hgroup>
-                <h2>Pour plus d'informations...</h2>
-                <p class="footer-content">
-                    Site web eco-conçu. <a> C'est quoi ? </a>
-                </p>
-                <p>
-                    Ce site a été réalisé dans le cadre de la ressourse R102
-                </p>
-                <p>
-                    IUT Aix-en-Provence, département Informatique
-                </p>
-            </hgroup>
-            <ul class="wrapper">
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="../navigation-rapide.html">Navigation Rapide</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-            <p>Cliquez sur l'icone du site pour remonter tout en haut.</p>
-            <p class="copyright-content">&copy; THE VAULT 2025</p>
-        </section>
-    </footer>
 
     <script src="https://kit.fontawesome.com/68f6de5607.js" crossorigin="anonymous"></script>
-
     <script src="../assets/js/index.js" crossorigin="anonymous"></script>
 </body>
 

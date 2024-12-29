@@ -1,0 +1,148 @@
+.album-main-infos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.albumpage main {
+    margin-bottom: 5em;
+}
+
+.albumpage .pconly {
+  display: none;
+}
+
+.album-main-infos hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-main-infos img {
+  width: 70px;
+}
+
+.album-main-infos section, .tracklist-section, .review-section, .video-section, .qa-section {
+  background-color: #171717;
+  margin: 0 2em;
+  border: 2px solid white
+}
+
+.album-main-infos section h2, .tracklist-section h3, .review-section h3, .video-section h3,.qa-section h3 {
+    border-bottom: 2px solid white;
+    padding: .25em 0;
+}
+
+.album-main-infos section p, .tracklist-section ol, .review-section p, .review-section h4,.video-section h4, .video-section iframe, .qa-section h4, .qa-section p {
+    padding: .5em .75em;
+}
+
+.album-review {
+  padding: 0 2em;
+}
+
+.album-review section {
+  margin: 2em 0;
+}
+
+.album-review h4,
+.album-review h5 {
+  text-align: start;
+  font-size: 15px;
+}
+
+.album-review iframe {
+    outline: none;
+    border-style: none;
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+    .albumpage main{
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 7em;
+    }
+
+
+  .album-review h4,
+  .album-review h5 {
+    font-size: 17px;
+  }
+
+  .album-review iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .album-main-infos img {
+    width: 170px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1081px) and (orientation: landscape) {
+  .album-main-infos {
+    padding: 3em 0;
+  }
+
+  .album-review h4,
+  .album-review h5 {
+    font-size: 21px;
+  }
+
+  .albumpage main {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 7em;
+  }
+
+  .album-review iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+    .album-main-infos {
+        height: max-content;
+        gap: 1em;
+    }
+
+    .album-main-infos img {
+        flex: 0 0 10%;
+        margin: 1em 0;
+    }
+
+    .album-main-infos hgroup {
+        flex: 0 0 80% 
+    }
+
+    .album-main-infos section {
+        margin-bottom: 2em;
+        flex: 0 0 88%;
+
+    }
+
+    .album-review {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    .album-review h2 {
+        flex: 1 0 100%;
+    }
+    
+    .album-review .tracklist-section, .album-review .review-section{
+        flex: 0 0 45%;
+    }
+
+    .album-review .video-section, .album-review .qa-section {
+        flex: 0 0 92%;
+    }
+}

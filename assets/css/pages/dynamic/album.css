@@ -98,17 +98,15 @@
       .foreground-image {
         border-radius: 15px;
         position: fixed;
-        top: 50%;
+        top: 15%;
         left: -5%;
         width: 40vw;
         height: 40vw;
-        transform: translateY(-47%);
-        transition: all 550ms ease-in-out;
-        transition-delay: 250ms;
+        transition: transform 500ms ease-in-out;
       }
 
       .foreground-image:hover {
-        transform: translateX(10em) translateY(-47%)
+        transform: translateX(10em)
       }
 
       .album-main-infos {

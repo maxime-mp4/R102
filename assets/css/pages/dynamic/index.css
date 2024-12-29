@@ -35,7 +35,7 @@
     margin: .25em;
     border-radius: 10px;
     width: 150px;
-    transition:  250ms ease-in-out;
+    transition: scale 250ms ease-in-out;
     position: relative;
     z-index: 10;
 }

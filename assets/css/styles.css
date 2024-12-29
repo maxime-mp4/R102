@@ -7,14 +7,15 @@
 @import url("./base/global.css");
 
 
-@import url("./dynamic.css");
-
-
 /*  AUTOMATIQUEMENT GERÉ AVEC JAVASCRIPT - NE PAS TOUCHER
     @import url("./dynamic.css");
     @import url("monochrome.css");
 */
 
+.source-label{
+  text-decoration: underline;
+  font-style: italic;
+}
 
 @keyframes rotate {
     from {

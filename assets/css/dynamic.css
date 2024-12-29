@@ -1,6 +1,7 @@
 @import url("./pages/dynamic/index.css");
 @import url("./pages/dynamic/fastnav.css");
 @import url("./pages/dynamic/album.css");
+@import url("./pages/dynamic/contact.css");
 
 /* COMPONENT IMPORT */
 @import url("./components/dynamic/navbar.css");
@@ -26,9 +27,10 @@
 }
 
 /* BODY STYLING */
-.homepage {
+.homepage, .contactpage {
   animation: couleur-changeante 60s infinite;
   }
+
 
 .fastnav {
     background: linear-gradient(

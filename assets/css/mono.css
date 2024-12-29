@@ -6,11 +6,11 @@
 
 
 * {
-    font-family: "Geist Mono", monospace;
+    font-family: "Azeret Mono";
 }
 
 
-/* 
+
 :is(p, i) {
     color: var(--dark-accent-color);
 }
@@ -24,7 +24,7 @@ body {
     background-color: black;
 }
 
-a:active {
+:is(a:hover,a:active){
+    color:white;
     text-decoration: underline;
-    color: white;
-  } */
+}

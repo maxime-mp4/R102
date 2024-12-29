@@ -1,0 +1,129 @@
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    background-color: rgba(255,255,255,0.125);
+}
+
+.form-informations h3 {
+  display: none;
+}
+
+.contact-section main {
+  margin: 10em;
+}
+
+.contact-header {
+  padding: 5em 2em;
+}
+
+:is(.contact-section form,.contact-section section) {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form {
+  min-height: 50vh;
+}
+
+.contact-section fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section p {
+    margin: 0;
+}
+
+:is(.contact-section input, .contact-section textarea){
+  padding: .5em;
+  border-radius: 10px;
+}
+
+.contact-section button {
+  border-style: none;
+  padding: 1em;
+  border-radius: 100em;
+  background: white;
+  font-weight: 900;
+  width: 30%;
+  align-self: center;
+  transition: all 150ms ease-in-out;
+  margin: 2em 0;
+}
+
+:is(.contact-section button:active, .contact-section button:hover) {
+  scale: 1.1;
+}
+
+.form-end-section{
+  margin-bottom: 1.75em;
+}
+
+@media (min-width: 768px) {
+  
+    .contactpage main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      min-height: 100vh;
+      margin: 0 auto;
+    }
+
+    .contact-section {
+      width: 100%;
+    }
+
+    .contactpage .contact-section  {
+      width: 100vw;
+    }
+    .contact-section form{
+    width : 60vw;
+    margin: 0 auto;
+  }
+
+  }
+
+  @media (min-width: 1200px) {
+    .contactpage main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+      min-height: 100vh;
+      margin: 0 auto;
+    }
+
+    .contact-section input, .contact-section textarea {
+      box-shadow: 0 0 10px rgba(0,0,0,0.125);
+    }
+
+    .contact-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+    }
+
+    .contactpage .contact-section  {
+      width: 100vw;
+      padding: 3em 0;
+    }
+    
+    .contact-section form {
+      background-color: rgba(255,255,255,0.75);
+      padding: 2em;
+      border-radius: 15px;
+      width : 50vw;
+      margin: 0 auto;
+    }
+
+    .contact-section {
+      width: 100%;
+    }
+  }

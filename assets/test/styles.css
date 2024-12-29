@@ -1,0 +1,122 @@
+/* -> TO GLOBAL */
+@import url("/assets/css/base/global.css");
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: black;
+  color: white;
+}
+
+main {
+  padding: 0 2em
+}
+
+/* -> TO DYNAMIC */
+
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-section form {
+min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.contact-section fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section p {
+  margin: 0;
+}
+
+:is(.contact-section input, .contact-section textarea){
+padding: .5em;
+}
+
+.contact-section button {
+border-style: none;
+padding: 1em;
+border-radius: 100em;
+background: white;
+font-weight: 900;
+width: 30%;
+align-self: center;
+transition: all 150ms ease-in-out;
+margin: 2em 0;
+}
+
+:is(.contact-section button:active, .contact-section button:hover) {
+scale: 1.1;
+}
+
+.tw {
+  margin: 1em 0;
+  background: #171717;
+  border: 2px solid white;
+}
+
+.tw label {
+  display: block;
+  padding: 0.25em .5em;
+}
+
+.tw textarea {
+  padding: 1em;
+  width: 100%;
+  background: none;
+  border-style: none;
+  color: white;
+  border-top: 2px solid white;
+
+}
+
+.form-end-section{
+margin-bottom: 1.75em;
+}
+
+@media (min-width: 768px) {
+  .contactpage main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 7em 0;
+  }
+
+  .contact-section {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contactpage main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 7em 0;
+  }
+  
+
+  .contact-section {
+    width: 100%;
+  }
+}
+

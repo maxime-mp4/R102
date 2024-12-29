@@ -5,6 +5,14 @@
   color: white;
 }
 
+.navbar p {
+  font-weight: 600;
+}
+
+:is(.navbar a:hover, .navbar a:active){
+  text-decoration: underline;
+}
+
 .navbar {
   box-shadow: 0 0 10px black;
   border-top: 1px solid white;

@@ -5,53 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="preload" href="assets/css/mono.css">
-    <link rel="preload" href="assets/css/dynamic.css">
+    <!-- <link rel="preload" href="assets/css/mono.css">
+    <link rel="preload" href="assets/css/dynamic.css"> -->
     <title>Document</title>
 </head>
 
-<body class="main-page">
-    <header class="main-header">
-        <p>LOGO</p>
+<body class="contactpage">
+
+    <header class="navbar">
+
+        <a class="navbar-icon" href="#">
+            <img src="../assets/images/favicon.png" alt="Icone du site">
+        </a>
+
         <nav>
-            <a href="#hamburger" class="toggleMenu">
-                <i class="fa-solid fa-sm fa-bars"></i>
-            </a>
-            <a class="hamburger-background" href="#">
-                <ul id="hamburger">
-                    <li>
-                        Navigation Rapide
-                    </li>
-                    <li>
-                        Nous contacter
-                    </li>
-                </ul>
-            </a>
+
+            <ul class="navbar-main-menu">
+
+                <li class="pc-only">
+                    <a href="#">
+                        <p class="navbar-display-label">Accueil</p>
+                    </a>
+                </li>
+
+                <li class="pc-only">
+                    <a href="navigation-rapide.html">
+                        <p class="navbar-display-label">Navigation Rapide</p>
+                    </a>
+                </li>
+
+                <li class="pc-only">
+                    <a href="contact.html">
+                        <p class="navbar-display-label">Contact</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="theme-switcher">
+                        <p class="navbar-display-label">Thème</p>
+                    </a>
+                </li>
+
+                <li class="mobile-only">
+                    <a href="#menu">
+                        <p class="navbar-display-label">Menu</p>
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul id="menu" class="mobile-navbar-menu">
+                <li>
+                    <a href="../index.html">
+                        <p class="navbar-display-label">Accueil</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../navigation-rapide.html">
+                        <p class="navbar-display-label">Navigation Rapide</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../contact.html">
+                        <p class="navbar-display-label">Contact</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#close">
+                        <p class="navbar-display-label">Fermer</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <a class="mobile-navbar-menu-background" href="#close"></a>
+
         </nav>
+
+
     </header>
-    <main id="main-contact">
-        <h1>Nous contacter</h1>
-        <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dignissimos vero veniam. Numquam aliquid
-            placeat nulla nam ipsam optio iure vitae. Tempora numquam veritatis eos nam ducimus, in velit distinctio?
-        </p>
-        <section class="section">
-            <form>
-                <label for="mail">Adresse mail:</label>
-                <input type="email" id="mail">
-                <p class="text">exemple@exemple.fr</p>
 
-                <label for="nom">Nom: </label>
-                <input type="text" id="nom">
 
-                <label for="prenom">Prénom: </label>
-                <input type="text" id="prenom">
+    <main>
+        <header class="contact-header">
 
-                <label for="nom">Nom: </label>
-                <input type="text" id="nom">
-            </form>
+            <hgroup>
+                <h1>Nous contacter</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolorem minus! Voluptatem reprehenderit doloremque obcaecati! Modi deserunt obcaecati id, dolore aut sapiente sint tempora! Et accusamus facilis quos fugit reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde ullam quasi beatae omnis. Eveniet recusandae corporis sint et! Error quidem perferendis fugit est. Cupiditate doloremque sit iste quaerat dicta.
+                </p>
+            </hgroup>
+    
+    
+        </header>
+    
+        <section class="contact-section">
+    
+                <h2>Vos informations</h2>
+
+                <form action="/submit" method="POST">
+                    
+
+                    <section class="form-informations">
+                        <h3>Informations de contact</h3>
+                            <label for="nom">Nom :</label>
+                            <input class="form-end-section" type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+    
+                            <label for="prenom">Prénom :</label>
+                            <input class="form-end-section" type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+            
+                        <fieldset class="form-end-section">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                            <p>exemple@exemple.com</p>
+                        </fieldset>
+                    </section>
+
+                    <section class="form-content">
+                        <label for="contenu">Message :</label>
+                        <textarea  class="form-end-section" id="contenu" name="contenu" rows="5" cols="33" placeholder="Écrivez votre message ici" required></textarea>
+                    </section>
+
+
+                    <button type="submit">Envoyer</button>
+                </form>
+                  
+    
         </section>
-    </main>    <script src="./assets/js/index.js" crossorigin="anonymous"></script>
+    </main>
+
+
+    <!-- <script src="./assets/js/index.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/68f6de5607.js" crossorigin="anonymous"></script>
 </body>
 

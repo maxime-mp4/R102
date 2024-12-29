@@ -1,34 +1,50 @@
-/* -> TO GLOBAL */
-@import url("/assets/css/base/global.css");
-* {
-  box-sizing: border-box;
-}
-
-
-body {
-  background-color: black;
-  color: white;
-}
-
-main {
-  padding: 0 2em
-}
-
-/* -> TO DYNAMIC */
 
 
 .contact-section {
   display: flex;
   flex-direction: column;
+  padding: 1em 2em;
+}
+
+.form-informations, .form-content {
+  margin: 1em 0;
+  background-color: #171717;
+  border: 2px solid white
+}
+
+.form-informations h3,.form-content label {
+  text-align: center;
+  padding: 0.5em;
+  border-bottom: 2px solid white;
+  margin-bottom: 0.5em;
+}
+
+.form-informations input, .form-informations label, .form-informations fieldset p {
+  margin-right: .75em;
+  margin-left: .75em;
 }
 
 
-.contact-section form {
-min-height: 50vh;
+.form-content textarea {
+  background: none;
+  color: white;
+}
+
+.contact-section main {
+margin: 10em;
+}
+
+.contact-header {
+padding: 5em 2em;
+}
+
+:is(.contact-section form,.contact-section section) {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  
+}
+
+.contact-section form {
+min-height: 50vh;
 }
 
 .contact-section fieldset {
@@ -60,32 +76,12 @@ margin: 2em 0;
 scale: 1.1;
 }
 
-.tw {
-  margin: 1em 0;
-  background: #171717;
-  border: 2px solid white;
-}
-
-.tw label {
-  display: block;
-  padding: 0.25em .5em;
-}
-
-.tw textarea {
-  padding: 1em;
-  width: 100%;
-  background: none;
-  border-style: none;
-  color: white;
-  border-top: 2px solid white;
-
-}
-
 .form-end-section{
-margin-bottom: 1.75em;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 768px) {
+
   .contactpage main {
     display: flex;
     flex-direction: column;
@@ -94,12 +90,20 @@ margin-bottom: 1.75em;
     width: 80vw;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 7em 0;
   }
 
   .contact-section {
     width: 100%;
   }
+
+  .contactpage .contact-section  {
+    width: 100vw;
+  }
+  .contact-section form{
+  width : 60vw;
+  margin: 0 auto;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -108,15 +112,37 @@ margin-bottom: 1.75em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30vw;
+    width: 50vw;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 7em 0;
+  }
+
+  .contact-section input, .contact-section textarea {
+    box-shadow: 0 0 10px rgba(0,0,0,0.125);
+  }
+
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+
+  .contactpage .contact-section  {
+    width: 100vw;
+    padding: 3em 0;
   }
   
+  .contact-section form {
+    background-color: rgba(255,255,255,0.75);
+    padding: 2em;
+    border-radius: 15px;
+    width : 50vw;
+    margin: 0 auto;
+  }
 
   .contact-section {
     width: 100%;
   }
 }
-

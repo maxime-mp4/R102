@@ -141,6 +141,10 @@
 
 @media (min-width: 1200px) {
 
+    .homepage-header {
+        scale: 0.9
+    }
+
     .homepage-header hgroup {
         height: 15vh;
     }
@@ -157,7 +161,7 @@
     }
 
     .homepage-header img {
-        width: 220px;
+        width: 200px;
     }
 
     .homepage-article section {

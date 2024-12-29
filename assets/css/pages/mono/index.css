@@ -54,10 +54,11 @@
 }
 
 .homepage-header img:active,.homepage-header img:hover {
-    border: 2px solid white
+    outline: 2px solid white;
+    outline-offset: 2px;
 }
 
-.pc-only {
+.homepage-header .pc-only {
     display: none;
 }
 
@@ -121,7 +122,7 @@
     }
 
     .homepage-article section {
-        margin: 5em 0;
+        margin: 2em 0;
         flex: 0 0 45%;
         min-height: 60%;
     }
@@ -172,6 +173,10 @@
         display: none;
     }
 
+    .homepage-article {
+        align-content: center;
+    }
+
     .homepage-header ul {
       padding: 2em 0;
     }
@@ -181,12 +186,13 @@
     }
 
     .homepage-article section {
-        margin: 10em 0;
+        margin: 5em 0;
         flex: 0 0 40%
     }
 
     .homepage-header nav {
-        width: 45%
+        width: 55%;
+        scale: 0.9;
     }
 
     .homepage-header li {

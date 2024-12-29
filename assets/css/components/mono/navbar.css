@@ -1,5 +1,8 @@
 @import url("../common/navbar.css");
 
+.dynamic-only {
+  display: none;
+}
 
 .navbar a {
   color: white;

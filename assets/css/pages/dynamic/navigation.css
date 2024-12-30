@@ -63,6 +63,10 @@
         margin: 0 auto;
     }
 
+    .artist-section ul {
+      width: 50%
+    }
+
     .artist-section img {
         width: 190px
     }

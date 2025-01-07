@@ -46,7 +46,7 @@ window.addEventListener("load", (e) => {
     loadTheme();
     setTimeout(() => {
         document.body.style.display = "unset"
-    }, 250);
+    }, 500);
 })
 
 themeSwitcher.addEventListener("click", (e) => {

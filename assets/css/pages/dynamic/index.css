@@ -51,8 +51,6 @@
 
 
 
-
-
 .homepage-article {
     display: flex;
     flex-direction: column;
@@ -141,6 +139,8 @@
         height: 15vh;
     }
 
+
+
     .homepage-article .mobile-only {
         display: none;
     }
@@ -157,7 +157,6 @@
     }
 
     .homepage-article section {
-        margin: 10em 0;
         flex: 0 0 30%
     }
 }

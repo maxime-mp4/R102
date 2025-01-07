@@ -7,26 +7,23 @@
 @import url("./pages/mono/navigation.css");
 @import url("./pages/mono/album.css");
 
-
 * {
-    font-family: "Azeret Mono";
+  font-family: "Azeret Mono";
 }
 
-
 :is(p, i) {
-    color: var(--dark-accent-color);
+  color: var(--dark-accent-color);
 }
 
 :is(h1, h2, h3, h4, h5, h6),
 .title {
-    color: var(--dark-title-color);
+  color: var(--dark-title-color);
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
-:is(a,a:hover,a:active){
-    color:white;
-    text-decoration: underline;
+:is(a, a:hover, a:active) {
+  color: white;
 }

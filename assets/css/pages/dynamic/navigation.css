@@ -42,13 +42,8 @@
 :is(.artist-section img:hover, .artist-section img:active) {
     scale: 1.1
 }
-  @media (min-width: 768px) {
 
 
-    .artist-section img {
-        width: 150px
-    }
-  }
   @media (min-width: 768px) and (max-width: 1081px) and (orientation: landscape) {
     .navigation-header{
         width: 70vw;
@@ -67,7 +62,4 @@
       width: 50%
     }
 
-    .artist-section img {
-        width: 190px
-    }
   }

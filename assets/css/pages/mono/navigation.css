@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    height: 35vh;
+    height: 50vh;
     padding: 0 2em;
   }
 
@@ -19,7 +19,7 @@
   .artist-section {
     background-color: #171717;
     border: 2px solid white;
-    margin: 2em;
+    margin: 1em;
     display: flex;
     justify-content: center;
     align-items: center;

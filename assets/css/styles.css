@@ -12,6 +12,8 @@
     @import url("monochrome.css");
 */
 
+@import url("./dynamic.css");
+
 .source-label{
   text-decoration: underline;
   font-style: italic;

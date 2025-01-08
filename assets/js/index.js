@@ -36,17 +36,15 @@ function loadTheme(){
 }
 
 function switchTheme () {
-    localStorage.getItem("theme") === "default" ? localStorage.setItem("theme", "mono") : localStorage.setItem("theme", "default")
+    localStorage.getItem("theme") === "default" ? localStorage.setItem("theme", "mono") : localStorage.setItem("theme", "default");
+    checkTheme();
     loadTheme();
-    checkTheme()
 }
 
 
 window.addEventListener("load", (e) => {
+    checkTheme();
     loadTheme();
-    setTimeout(() => {
-        document.body.style.display = "unset"
-    }, 500);
 })
 
 themeSwitcher.addEventListener("click", (e) => {

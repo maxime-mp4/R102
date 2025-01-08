@@ -12,6 +12,7 @@
   .navbar-icon img {
     animation: rotate 5s linear infinite;
     width: 30px;
+    height: 30px;
   }
 
   .navbar-icon, nav {

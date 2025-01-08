@@ -49,8 +49,6 @@
     display: none;
 }
 
-
-
 .homepage-article {
     display: flex;
     flex-direction: column;
@@ -59,6 +57,18 @@
     padding: 2em;
     background-color: rgba(255,255,255,0.125);
 }
+
+.partner-section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+    width: 60vw;
+    margin: 0 auto;
+}
+
 
 .homepage-article p {
     text-align: justify;

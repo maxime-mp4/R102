@@ -37,6 +37,7 @@
 }
 
 :is(.contact-section input, .contact-section textarea){
+  background-color: #fcfcfc;
   padding: .5em;
   border-radius: 10px;
 }
@@ -47,6 +48,7 @@
   border-radius: 100em;
   background: white;
   font-weight: 900;
+  outline: 1px solid black;
   width: 30%;
   align-self: center;
   transition: all 150ms ease-in-out;

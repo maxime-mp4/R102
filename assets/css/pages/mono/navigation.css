@@ -8,6 +8,10 @@
     padding: 0 2em;
   }
 
+  .artist-section .pc-only {
+    display: none;
+  }
+
   .navigationpage article {
     margin-bottom: 5em;
     display: flex;
@@ -85,6 +89,10 @@
   }
 
   @media (min-width: 1200px) {
+
+    .artist-section .pc-only {
+      display: unset;
+    }
 
 
     .artist-section {

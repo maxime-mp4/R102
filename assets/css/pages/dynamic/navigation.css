@@ -8,6 +8,10 @@
     padding: 0 2em;
   }
 
+  .artist-section .pc-only {
+    display: none;
+  }
+
   .navigationpage h2 {
     width: 100%;
     text-align: center;
@@ -52,6 +56,10 @@
   }
 
   @media (min-width: 1200px) {
+
+    .artist-section .pc-only {
+      display: unset;
+    }
 
     .navigation-header{
         width: 50vw;

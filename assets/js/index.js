@@ -1,53 +1,42 @@
 const availableThemes = ["default", "mono"];
 const stylesheet = document.styleSheets[0];
 const themeSwitcher = document.getElementById("theme-switcher");
+const linkTag = document.getElementById("css-link");
 
+// Stocker le thème localement pour éviter les multiples appels à localStorage
+let currentTheme = localStorage.getItem("theme");
 
-if(!availableThemes.includes(localStorage.getItem("theme"))){
-    localStorage.clear()
+if (!availableThemes.includes(currentTheme)) {
+    currentTheme = "default";
+    localStorage.setItem("theme", currentTheme);
 }
 
-function removeRule(url){
-    const stylesheet = document.styleSheets[0];
-
-    for (let i = 0; i < stylesheet.cssRules.length; i++) {
-        if (stylesheet.cssRules[i] instanceof CSSImportRule && stylesheet.cssRules[i].href.includes(url)) {
-        break;
-        }
-    }
-}
-
-function checkTheme(){
-    if(!localStorage.getItem("theme")){
-        localStorage.setItem("theme", "default")
-    }   
-}
-
-function loadTheme(){
-    switch(localStorage.getItem("theme")){
-        case "default":
-            document.styleSheets[0].insertRule("@import url('./dynamic.css')");
-        break;
+function loadTheme() {
+    // Dynamiser le chargement du thème sans recharger la page
+    let themeUrl = "";
     
+    switch(currentTheme) {
+        case "default":
+            themeUrl = "dynamic.css";
+            break;
         case "mono":
-            document.styleSheets[0].insertRule("@import url('./mono.css')");
-        break;
+            themeUrl = "mono.css";
+            break;
     }
+    
+        let tag = linkTag.href.split("/");
+        tag[tag.length-1] = themeUrl
+        console.log(tag.join("/"))
+        linkTag.href = tag.join("/");
 }
 
-function switchTheme () {
-    localStorage.getItem("theme") === "default" ? localStorage.setItem("theme", "mono") : localStorage.setItem("theme", "default");
-    checkTheme();
+window.addEventListener("load", () => {
+    loadTheme();    
+});
+
+themeSwitcher.addEventListener("click", () => {
+    currentTheme = (currentTheme === "default") ? "mono" : "default";
+    localStorage.setItem("theme", currentTheme);
     loadTheme();
-}
-
-
-window.addEventListener("load", (e) => {
-    checkTheme();
-    loadTheme();
-})
-
-themeSwitcher.addEventListener("click", (e) => {
-    switchTheme();
-    location.reload()
+    // Pas de rechargement de page nécessaire, on gère dynamiquement le changement
 });

@@ -1,3 +1,7 @@
+@import url("./base/reset.css");
+@import url("./base/global.css");
+
+
 @import url("./pages/dynamic/index.css");
 @import url("./pages/dynamic/navigation.css");
 @import url("./pages/dynamic/album.css");
@@ -6,6 +10,8 @@
 /* COMPONENT IMPORT */
 @import url("./components/dynamic/navbar.css");
 @import url("./components/dynamic/footer.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     scroll-behavior: smooth;
@@ -24,6 +30,17 @@
 
 :is(a) {
   color: var(--white-accent-color);
+}
+
+
+.source-label{
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.invisible-content {
+  pointer-events: none;
+  visibility: hidden;
 }
 
 /* BODY STYLING */

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("./base/global.css");
+
 /* COMPONENT IMPORT */
 @import url("./components/mono/navbar.css");
 @import url("./components/mono/footer.css");
@@ -27,3 +30,15 @@ body {
 :is(a, a:hover, a:active) {
   color: white;
 }
+
+
+.source-label{
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.invisible-content {
+  pointer-events: none;
+  visibility: hidden;
+}
+  

@@ -39,6 +39,10 @@
     justify-content: center;
 }
 
+.partner-section {
+    padding: 5em 2em;
+}
+
 .homepage-header img {
     margin: .25em;
     width: 125px;
@@ -106,7 +110,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
-        height: 100vh;
     }
 
     .homepage-article h2 {
@@ -157,6 +160,11 @@
 
 
 @media (min-width: 1200px) {
+
+    .partner-section {
+        width: 70vw;
+        margin: 0 auto;
+    }
 
     .homepage-header hgroup {
         height: 15vh;

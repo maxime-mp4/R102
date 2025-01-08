@@ -18,6 +18,9 @@
     font-family: "Poppins";
 }
 
+.mono-only{
+  display: none !important;
+}
 
 :is(p, i) {
     color: var(--white-accent-color);

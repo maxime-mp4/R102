@@ -25,7 +25,7 @@
 
 .homepage-header ul {
     margin: 1em 0;
-    gap: 5px;
+    gap: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,10 +34,11 @@
 .homepage-header img {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 10px;
-    width: 150px;
     transition: scale 250ms ease-in-out;
     position: relative;
     z-index: 10;
+    width: 140px;
+    height: 140px;
 }
 
 .homepage-header img:active,.homepage-header img:hover {
@@ -86,6 +87,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 
 

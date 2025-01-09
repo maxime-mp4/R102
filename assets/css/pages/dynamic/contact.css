@@ -17,13 +17,30 @@
   margin: 10em;
 }
 
+.contact-section button {
+  color: black;
+}
+
 .contact-header {
   padding: 5em 2em;
 }
 
+.form-informations {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.form-content {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 :is(.contact-section form,.contact-section section) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  border-radius: 15px;
+  background-color: #ccc;
+  padding: .5em .25em;
+  flex-direction: column;
 }
 
 
@@ -34,6 +51,10 @@
 
 .contact-section p {
     margin: 0;
+}
+
+#email {
+  width: 100%;
 }
 
 :is(.contact-section input, .contact-section textarea){
@@ -48,7 +69,6 @@
   border-radius: 100em;
   background: white;
   font-weight: 900;
-  outline: 1px solid black;
   width: 30%;
   align-self: center;
   transition: all 150ms ease-in-out;
@@ -90,6 +110,7 @@
   }
 
   @media (min-width: 1200px) {
+    
     .contactpage main {
       display: flex;
       flex-direction: column;
@@ -100,6 +121,14 @@
       margin: 0 auto;
     }
 
+    :is(.contact-section form,.contact-section section) {
+      display: flex;
+      background-color: #ccc;
+      padding: 1.5em 1.25em;
+      flex-direction: column;
+      margin: 1em 0;
+  }
+  
     .contact-section input, .contact-section textarea {
       box-shadow: 0 0 10px rgba(0,0,0,0.125);
     }

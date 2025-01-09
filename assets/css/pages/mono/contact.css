@@ -7,6 +7,10 @@
     flex-direction: column;
     padding: 3em 2em;
   }
+
+  .contact-section button {
+    color: black;
+  }
   
   .form-informations, .form-content {
     margin: 1em 0;
